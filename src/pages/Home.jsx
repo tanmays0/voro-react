@@ -12,12 +12,13 @@ export default function Home() {
             <h1 className="display-4 fw-bold text-dark">
               Timeless <span className="text-warning">Elegance</span>
             </h1>
+
             <p className="lead text-muted">
               Discover exquisite jewellery handcrafted to perfection.
             </p>
 
             <Link to="/menu" className="btn btn-warning btn-lg mt-3">
-              Explore Collection <i className="fas fa-arrow-right ms-2"></i>
+              Explore Collection
             </Link>
           </div>
 
@@ -36,6 +37,7 @@ export default function Home() {
       <section className="features-section py-5 bg-white">
         <div className="container text-center">
           <div className="row g-4">
+
             <div className="col-md-4">
               <i className="fas fa-award fa-3x text-warning mb-3"></i>
               <h5>Handcrafted Quality</h5>
@@ -48,7 +50,7 @@ export default function Home() {
               <i className="fas fa-gem fa-3x text-warning mb-3"></i>
               <h5>Certified Gems</h5>
               <p className="text-muted">
-                Only the finest, ethically sourced gemstones.
+                Only the finest ethically sourced gemstones.
               </p>
             </div>
 
@@ -59,6 +61,7 @@ export default function Home() {
                 Fast and insured delivery right to your door.
               </p>
             </div>
+
           </div>
         </div>
       </section>
@@ -67,6 +70,7 @@ export default function Home() {
       <section className="gallery-section py-5 bg-light">
         <div className="container">
           <div className="row g-3">
+
             {[
               `${import.meta.env.BASE_URL}images/i2.jpg`,
               `${import.meta.env.BASE_URL}images/i3.jpg`,
@@ -86,6 +90,7 @@ export default function Home() {
                 />
               </div>
             ))}
+
           </div>
         </div>
       </section>
@@ -102,6 +107,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
     </>
   );
 }
