@@ -3,7 +3,8 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  server:{
-    host:true
+  base: '/voro-react/',
+  server: {
+    host: true
   }
 })
