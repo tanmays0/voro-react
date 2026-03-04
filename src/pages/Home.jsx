@@ -15,13 +15,15 @@ export default function Home() {
             <p className="lead text-muted">
               Discover exquisite jewellery handcrafted to perfection.
             </p>
+
             <Link to="/menu" className="btn btn-warning btn-lg mt-3">
               Explore Collection <i className="fas fa-arrow-right ms-2"></i>
             </Link>
           </div>
+
           <div className="hero-image col-md-6 mt-4 mt-md-0 text-center">
             <img
-             src="/images/i1.jpg"
+              src={`${import.meta.env.BASE_URL}images/i1.jpg`}
               alt="Jewelry"
               className="img-fluid rounded shadow"
               style={{ maxHeight: "400px", objectFit: "cover" }}
@@ -41,6 +43,7 @@ export default function Home() {
                 Meticulously made with passion and precision.
               </p>
             </div>
+
             <div className="col-md-4">
               <i className="fas fa-gem fa-3x text-warning mb-3"></i>
               <h5>Certified Gems</h5>
@@ -48,6 +51,7 @@ export default function Home() {
                 Only the finest, ethically sourced gemstones.
               </p>
             </div>
+
             <div className="col-md-4">
               <i className="fas fa-shipping-fast fa-3x text-warning mb-3"></i>
               <h5>Secure Delivery</h5>
@@ -64,12 +68,11 @@ export default function Home() {
         <div className="container">
           <div className="row g-3">
             {[
-  "/images/i2.jpg",
-  "/images/i3.jpg",
-  "/images/i4.jpg",
-  "/images/i5.jpg"
-]
-.map((src, index) => (
+              `${import.meta.env.BASE_URL}images/i2.jpg`,
+              `${import.meta.env.BASE_URL}images/i3.jpg`,
+              `${import.meta.env.BASE_URL}images/i4.jpg`,
+              `${import.meta.env.BASE_URL}images/i5.jpg`
+            ].map((src, index) => (
               <div className="col-6 col-md-3" key={index}>
                 <img
                   src={src}
@@ -91,7 +94,9 @@ export default function Home() {
       <section className="py-5">
         <div className="container text-center">
           <h2 className="fw-bold text-dark mb-4">Our Collections</h2>
+
           <ProductsPage preview />
+
           <Link to="/menu" className="btn btn-outline-warning mt-4">
             View More
           </Link>

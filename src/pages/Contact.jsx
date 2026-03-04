@@ -36,7 +36,7 @@ export default function Contact() {
         <div className="row g-4">
           <div className="col-md-6">
             <img
-              src="/images/i6.jpg"
+              img src="/voro-react/images/i6.jpg" 
               alt="Customer Service"
               className="img-fluid rounded shadow"
             />

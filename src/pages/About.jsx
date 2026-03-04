@@ -7,7 +7,7 @@ export default function About() {
         <div className="row align-items-center g-5">
           <div className="col-md-6">
             <img
-              src="/images/i7.jpg"
+              img src="/voro-react/images/i7.jpg" 
               alt="Jewelry crafting"
               className="img-fluid rounded shadow"
             />
